@@ -1,7 +1,7 @@
 package iut.acpi;
 
-public class Avis {
-    public Avis(String commentaire) {
+public class Review {
+    public Review(String commentaire) {
 
     }
 

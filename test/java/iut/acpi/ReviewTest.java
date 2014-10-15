@@ -5,11 +5,11 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
-public class AvisTest {
+public class ReviewTest {
 
     @Test
     public void canAttachAvisToABook() {
-        String avis = Avis.EXCELLENT;
+        String avis = Review.EXCELLENT;
         Book book = new Book();
 
         book.attach(avis);
@@ -19,10 +19,10 @@ public class AvisTest {
 
     @Test
     public void anAuthorCouldWriteAnAvis() {
-        Avis avis = new Avis(Avis.EXCELLENT);
-        avis.setAuthor("unnamed");
+        Review review = new Review(Review.EXCELLENT);
+        review.setAuthor("unnamed");
 
-        assertEquals(avis.getAuthor(), "unnamed");
+        assertEquals(review.getAuthor(), "unnamed");
 
     }
 
